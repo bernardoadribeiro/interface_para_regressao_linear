@@ -106,6 +106,47 @@
 
 
         </div>
-        
+        <script>
+            function calcular(){
+                constant = 7333.3333
+                
+                area = document.getElementById("area").value;
+                garage = document.getElementById("garage").value;
+                fireplace = document.getElementById("fireplace").value;
+                baths = document.getElementById("baths").value;
+                whitemarble = document.getElementById("whitemarble").value;
+                blackmarble = document.getElementById("blackmarble").value;
+                indianmarble = document.getElementById("indianmarble").value;
+                floors = document.getElementById("floors").value;
+                city = document.getElementById("city").value;
+                solar = document.getElementById("solar").value;
+                eletric = document.getElementById("eletric").value;
+                fiber = document.getElementById("fiber").value;
+                glassdoors = document.getElementById("glassdoors").value;
+                swimmingpool = document.getElementById("swimmingpool").value;
+                garden = document.getElementById("garden").value;
+
+                resultado = Math.round(
+                    constant + 
+                    (area*25) + 
+                    (garage*1500) + 
+                    (fireplace*750) +
+                    (baths*1250) +
+                    (whitemarble*7666.6667) +
+                    (blackmarble*(-1333.3333)) +
+                    (indianmarble*(-6333.3333)) +
+                    (floors*15000) +
+                    (city*3500) +
+                    (solar*250) +
+                    (eletric*1250) +
+                    (fiber*11750) +
+                    (glassdoors*4450) +
+                    (swimmingpool*0) +
+                    (garden*0)
+                    ).toFixed(2);
+
+                document.getElementById("resultado").innerHTML = "Previsão de preço da casa: R$: "+ resultado;
+            }
+        </script>
     </body>
 </html>
