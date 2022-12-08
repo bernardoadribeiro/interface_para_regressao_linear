@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+    <body>
+
+        <div class="container">
+
+            <h1 class="display-4 mt-5">Previsão de precificação de casa</h1>
+           
+            <hr>          
+
+            <div class="border p-5">
+                
+                <h2>Informe os itens presentes na casa</h2>
+                
+                <div class="form-group">                
+                    <label for="area">Área (m²):</label>
+                    <input type="number" value=0 class='form-control' name="area" id="area" placeholder="Insira o valor inteiro">                    
+                </div>        
+                
+                <div class="form-group">                
+                    <label for="garage">Garagem (capacidade de carros):</label>
+                    <input type="number" value=0 class='form-control' name="garage" id="garage" placeholder="Insira o valor inteiro">                    
+                </div>                
+                
+                <div class="form-group">                
+                    <label for="fireplace">Qtd. Lareiras:</label>
+                    <input type="number" value=0 class='form-control' name="fireplace" id="fireplace" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="baths">Qtd. Banheiros:</label>
+                    <input type="number" value=0 class='form-control' name="baths" id="baths" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="whitemarble">Possui mármore branco? (1: Sim | 0: Não)</label>
+                    <input type="number" value=0 class='form-control' name="whitemarble" id="whitemarble" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="blackmarble">Possui mármore preto? (1: Sim | 0: Não)</label>
+                    <input type="number" value=0 class='form-control' name="blackmarble" id="blackmarble" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="indianmarble">Possui mármore indiano? (1: Sim | 0: Não)</label>
+                    <input type="number" value=0 class='form-control' name="indianmarble" id="indianmarble" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="floors">Possui piso? (1: Sim | 0: Não)</label>
+                    <input type="number" value=0 class='form-control' name="floors" id="floors" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="city">Qual a cidade? (1, 2 ou 3)</label>
+                    <input type="number" value=0 class='form-control' name="city" id="city" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="solar">Possui energia solar? (1: Sim | 0: Não)</label>
+                    <input type="number" value=0 class='form-control' name="solar" id="solar" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="eletric">Possui energia elétrica? (1: Sim | 0: Não)</label>
+                    <input type="number" value=0 class='form-control' name="eletric" id="eletric" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="fiber">Possui fibra ótica (internet)? (1: Sim | 0: Não)</label>
+                    <input type="number" value=0 class='form-control' name="fiber" id="fiber" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="glassdoors">Possui porta de vidro? (1: Sim | 0: Não)</label>
+                    <input type="number" value=0 class='form-control' name="glassdoors" id="glassdoors" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="swimmingpool">Possui piscina? (1: Sim | 0: Não)</label>
+                    <input type="number" value=0 class='form-control' name="swimmingpool" id="swimmingpool" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group">                
+                    <label for="garden">Possui jardim? (1: Sim | 0: Não)</label>
+                    <input type="number" value=0 class='form-control' name="garden" id="garden" placeholder="Insira o valor inteiro">                    
+                </div>
+
+                <div class="form-group my-5">                    
+                    <input type="button" class='btn btn-primary' value="Previsão" onclick="calcular()">                    
+                </div>            
+                
+                <div class="form-group">
+                    <h2 id="resultado">Previsão de preço da casa: R$-</h2>
+                </div>
+
+            </div>
+
+
+        </div>
+        
+    </body>
+</html>
